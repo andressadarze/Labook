@@ -1,0 +1,45 @@
+### Signup
+POST http://localhost:3003/users/signup
+Content-Type: application/json
+
+{
+    "name": "Andressa",
+    "email": "andressa@gmail.com",
+    "password": "andressa123"
+}
+
+### Login
+
+POST http://localhost:3003/users/login
+Content-Type: application/json
+
+{
+    "email": "andressa@gmail.com",
+    "password": "andressa123"
+}
+
+### AddPost
+POST http://localhost:3003/posts
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFhN2FkN2E4LTI2ZDItNGVlNS1iNzdiLTk0ZGFmOTg2N2MzYSIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NzM1NTUxNzksImV4cCI6MTY3MzU1ODc3OX0.1bq611Wx6q6mxKrVgvOkWWYXucZrxg-tPPpE98YuiMA
+Content-Type: application/json
+
+{
+    "content": "NOVO POOOOOOST!!!!!"
+}
+
+### GetAllPosts
+GET http://localhost:3003/posts
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQxOTc1MTY1LTE1MzctNDQ5MC1hOGU0LTdhMzY2MTcxZjE4MyIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NzM1NTQwNTAsImV4cCI6MTY3MzU1NzY1MH0.am9u3yPyetm12hkHIumgwqvNgETrrIemuzJnRTiSp7M
+
+### DeletePost
+
+DELETE http://localhost:3003/posts/0b2ae2e1-4f50-4df4-b836-16c058e5c805
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFhN2FkN2E4LTI2ZDItNGVlNS1iNzdiLTk0ZGFmOTg2N2MzYSIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NzM1NTUxNzksImV4cCI6MTY3MzU1ODc3OX0.1bq611Wx6q6mxKrVgvOkWWYXucZrxg-tPPpE98YuiMA
+
+### LikePost
+POST http://localhost:3003/posts/like/be882841-b273-433b-b170-edf10394ca6e
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQxOTc1MTY1LTE1MzctNDQ5MC1hOGU0LTdhMzY2MTcxZjE4MyIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NzM1NTQwNTAsImV4cCI6MTY3MzU1NzY1MH0.am9u3yPyetm12hkHIumgwqvNgETrrIemuzJnRTiSp7M
+
+### DislikePost
+DELETE http://localhost:3003/posts/like/0b2ae2e1-4f50-4df4-b836-16c058e5c805
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQxOTc1MTY1LTE1MzctNDQ5MC1hOGU0LTdhMzY2MTcxZjE4MyIsInJvbGUiOiJOT1JNQUwiLCJpYXQiOjE2NzM1NTQwNTAsImV4cCI6MTY3MzU1NzY1MH0.am9u3yPyetm12hkHIumgwqvNgETrrIemuzJnRTiSp7M
