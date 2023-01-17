@@ -4,7 +4,6 @@ export interface IPostDB {
     user_id: string,
 }
 
-
 export class Post {
     constructor(
         private id: string,
@@ -12,25 +11,6 @@ export class Post {
         private userId: string,
         private likes: number = 0
     ) {}
-
-    // public static mapPostsToFront = (postsDB: IPostDB[]) => {
-    //     return postsDB.map(postDB => {
-    //         const post = new Post(
-    //             postDB.id,
-    //             postDB.content,
-    //             postDB.user_id
-    //         )
-
-    //         const postResponse: IGetPostsPost = {
-    //             id: post.getId(),
-    //             content: post.getContent(),
-    //             userId: post.getUserId(),
-    //             likes: post.getLikes()
-    //         }
-
-    //         return postResponse
-    //     })
-    // }
 
     public getId = () => {
         return this.id

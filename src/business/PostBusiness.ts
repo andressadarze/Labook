@@ -1,7 +1,7 @@
 import PostDatabase from "../data/PostDatabase";
 import IdGenerator from "../services/IdGenerator"
 import  {Authenticator, ITokenPayload } from "../services/Authenticator"
-import { IAddPostInputDTO, IDeletePostInputDTO, IGetPostsInputDTO, IGetPostsOutputDTO, IGetPostsPost, Post } from "../entities/Post";
+import { IAddPostInputDTO, IDeletePostInputDTO, IGetPostsInputDTO, IGetPostsOutputDTO, Post } from "../entities/Post";
 import { dislikeNotAuthorized, IdNotFound, InvalidContent, InvalidToken, LikeNotAuthorized, MissingFields, NotAuthorized } from "../error/error";
 import { USER_ROLES } from "../entities/User";
 import { ILikeDB, ILikeInputDTO } from "../entities/Like";
@@ -36,7 +36,6 @@ class PostBusiness {
             id,
             content,
             payload.id
-            // 0
         )
 
         await this.postDatabase.createPost(post)
