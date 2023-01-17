@@ -90,7 +90,7 @@ Acessar o arquivo `tables.sql` e executar os comandos de criação das tabelas `
 Popular as tabelas através das requisições do Postman ou do arquivo `requests.rest` da aplicação.
 
 ## Documentação
-  - links POSTMAN e deploy do back
+  - [Postman](https://documenter.getpostman.com/view/21556158/2s8ZDVZ3rK)
   
 ## Tecnologias utilizadas
   -   NodeJS
@@ -106,8 +106,6 @@ Popular as tabelas através das requisições do Postman ou do arquivo `requests
   
 ## Tarefas em aberto
 :memo: Cobertura de testes automatizados
-
-:memo: Documentação do Postman
 
 :memo: Deploy do backend
   
